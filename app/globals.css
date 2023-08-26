@@ -1,0 +1,129 @@
+body {
+  background-color: white;
+  width: inherit;
+  /* max-width: 1200px;
+  margin: auto;
+  padding-top: 64px; */
+}
+input {
+  background-color: #f5f6f7;
+  border-radius: 20px;
+  border: 1px solid #ebedef;
+  outline: none;
+  color: #1e1e1e;
+  font-family: inherit;
+  font-size: 32px;
+  padding: 32px 64px;
+  width: -webkit-fill-available;
+}
+/* input {
+  background-color: #2a2929;
+  border-radius: 20px;
+  border: 1px solid #2a2929;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-size: 32px;
+  padding: 32px 64px;
+  width: -webkit-fill-available;
+} */
+
+input:hover,
+input:focus {
+  border: 1px solid #777777;
+}
+
+.bookmarkGrid {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bookmark {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 24px;
+  overflow: hidden;
+  filter: grayscale(0%);
+  background-color: #f5f5f5;
+  transition: 0.3s;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmarkTexts {
+  padding-left: 40px;
+  padding-right: 32px;
+}
+
+.bookmarkTitle {
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.bookmarkDescription {
+  color: #777777;
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.bookmarkButton {
+  background-color: #1e1e1e;
+  text-decoration: none;
+  color: white;
+  padding: 6px 16px 7px 16px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.bookmarkButton:hover {
+  background-color: #0022dd;
+}
+
+.bookmarkThumbnail {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  border-radius: 25px;
+}
+
+.bookmarkImage {
+  border-radius: 12px;
+}
+
+/* .bookmark > a > img {
+  object-fit: none !important;
+  border-radius: 10px;
+} */
+
+/* .bookmark:hover {
+  filter: grayscale(0%);
+  transform: rotate3d(30deg, 30deg, 30deg);
+  transform: scale(1.06);
+  z-index: 9;
+  animation: glowing 1s ease-in-out infinite alternate;
+} */
+
+/* a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  line-height: 0.001;
+} */
+
+/* @keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff,
+      0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+} */
