@@ -35,9 +35,43 @@ input:focus {
 
 .bookmarkGrid {
   margin-top: 8px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+}
+
+@media screen and (min-width: 720px) {
+  .bookmarkGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .bookmark {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bookmarkGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bookmark:nth-child(2) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .bookmarkGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .bookmark:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .bookmarkGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .bookmark:nth-child(4) {
+    margin-right: 0px;
+  }
 }
 
 .bookmark {
@@ -48,15 +82,16 @@ input:focus {
   filter: grayscale(0%);
   background-color: #f5f5f5;
   transition: 0.3s;
-  max-width: 480px;
+  /* max-width: 480px; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .bookmarkTexts {
   padding-left: 40px;
   padding-right: 32px;
+  /* min-width: 200px; */
 }
 
 .bookmarkTitle {
@@ -91,6 +126,8 @@ input:focus {
   padding-bottom: 8px;
   padding-right: 12px;
   border-radius: 25px;
+  /* min-width: 200px;
+  min-height: 200px; */
 }
 
 .bookmarkImage {
