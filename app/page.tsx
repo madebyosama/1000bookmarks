@@ -48,15 +48,6 @@ export default function Home() {
           {filterByValue(bookmarks, filtered).map((s: any) => {
             return (
               <div key={s.Link} className='bookmark'>
-                {/* <a href={s.Link} target='_blank'>
-                  <Image
-                    src={s.Thumbnail}
-                    alt='Bookmark Image'
-                    width='350'
-                    height='284'
-                    style={{ objectFit: 'cover' }}
-                  />
-                </a> */}
                 <div className='bookmarkTexts'>
                   <div className='bookmarkTitle'>{s.Title}</div>
                   <div className='bookmarkDescription'>{s.Description}</div>
